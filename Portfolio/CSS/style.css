@@ -45,6 +45,7 @@ body {
     color: #9a9da0;
     font-weight: 800;
 }
+
 .navbar-links:hover {
     color: rgb(255 255 255 / 75%);
 }
@@ -74,7 +75,6 @@ body {
 /* ==================About Section================== */
 
 #about {
-    /* border: 5px solid red; */
     padding: 3rem;
     width: 100%;
 }
@@ -190,6 +190,18 @@ body {
     margin-left: 49.6%;
 }
 
+.ekeeda-dates,
+.msc-dates,
+.bsc-dates {
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #343a40;
+    margin-top: 10px;
+    display: none;
+}
+
 /* ==================Project Section================== */
 
 #projects-sec {
@@ -258,12 +270,41 @@ hr {
     overflow: visible;
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 0 ;
+    margin: 0;
 }
 
 /* ==================Media Queries================== */
 
+@media screen and (max-width: 1314px) {
+
+    .ekeeda-date {
+        margin-left: 45%;
+    }
+
+    .msc-date {
+        margin-left: 34.5%;
+    }
+
+    .bsc-date {
+        margin-left: 34.6%;
+    }
+}
+
 @media screen and (max-width: 980px) {
+    body {
+        text-align: center;
+    }
+
+    #about,
+    #education-sec,
+    #projects-sec,
+    #skills-sec {
+        padding: 10px;
+    }
+
+    #aboutPara {
+        text-align: justify;
+    }
 
     .mobile-navbar-btn {
         display: inline-block;
@@ -325,5 +366,22 @@ hr {
         width: 100%;
         left: 0;
         top: 4rem;
+    }
+
+    .git-img {
+        margin: 20px auto 0 auto;
+    }
+    
+
+    .ekeeda-dates,
+    .msc-dates,
+    .bsc-dates {
+        display: block;
+    }
+
+    .ekeeda-date,
+    .msc-date,
+    .bsc-date {
+        display: none;
     }
 }
